@@ -5,7 +5,7 @@ WORKDIR /app
 RUN cd app
 
 COPY package*.json ./
-
+RUN npm i
 RUN npm install
 
 COPY . .
